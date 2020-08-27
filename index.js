@@ -15,22 +15,19 @@ function write(file, text) {
 
   fs.appendFileSync(file, text);
 }
+dateFormat.masks.logDate = 'dd/mm/yyyy HH:MM:ss'
+dateFormat.masks.fileDate = '"date-"dd-mm-yyyy"-time-"HH"h-"MM"m-"ss"s"'
 
 function dateFull() {
   const date = new Date();
-  const dateFull = dateFormat(date, 'dddd, mmmm dS, yyyy, h:MM:ss TT');
+  const dateFull = dateFormat(date, 'logDate');
+  console.log(dateFormat(date, 'fileDate'))
   return dateFull;
 }
 
-let date, hour, minute, second, dateDMY;
 
-date = new Date();
-hour = dateFormat(date, 'hh');
-minute = dateFormat(date, 'MM'); // MM - For minutes
-second = dateFormat(date, 'ss');
-dateDMY = dateFormat(date, 'dd-mm-yyyy'); // mm - For month
-
-const pathToLog = `${root}/log/date-${dateDMY}-time-${hour}h-${minute}m-${second}s-bot.log`;
+let date = new Date();
+const pathToLog = `${root}/log/${dateFormat(date, 'fileDate')}-bot.log`;
 
 module.exports = {
   info: (text) => {
