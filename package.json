@@ -1,0 +1,32 @@
+{
+  "name": "very-simple-log",
+  "version": "1.0.0",
+  "description": "Simple logger",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DareFox/simple-logger.git"
+  },
+  "keywords": [
+    "nodejs",
+    "js",
+    "logger",
+    "log"
+  ],
+  "author": "DareFox",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/DareFox/simple-logger/issues"
+  },
+  "homepage": "https://github.com/DareFox/simple-logger#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dateformat": "^3.0.3"
+  }
+}
