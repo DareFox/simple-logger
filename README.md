@@ -44,4 +44,4 @@ log.trace(`ID is: ${variable}`)
 
 ### Console Output
 
-![Example of «Usage» code](https://i.imgur.com/tyr8ily.png "Example of «Usage» code")
+![Example of «Usage» code](https://i.imgur.com/uaiEez7.png "Example of «Usage» code")
