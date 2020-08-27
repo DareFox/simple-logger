@@ -72,7 +72,7 @@ module.exports = {
   },
   trace: (text) => {
     const log = `[${dateFull()} - TRACE]: ${text}\n`;
-    console.log(log.blue);
+    console.log(log.brightBlue);
     write(pathToLog, log);
   },
   debug: (text) => {
