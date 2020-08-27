@@ -27,7 +27,7 @@ function dateFull() {
 
 
 let date = new Date();
-const pathToLog = `${root}/log/${dateFormat(date, 'fileDate')}-bot.log`;
+const pathToLog = `${root}/log/${dateFormat(date, 'fileDate')}.log`;
 
 module.exports = {
   info: (text) => {
