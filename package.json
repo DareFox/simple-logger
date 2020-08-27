@@ -1,6 +1,6 @@
 {
   "name": "very-simple-log",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "This is a very simple logger that can write logs to a file, paint text in a certain color depending on the log class and supports error codes for the ERROR and FATAL classes",
   "main": "index.js",
   "directories": {
