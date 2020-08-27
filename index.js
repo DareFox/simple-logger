@@ -48,9 +48,19 @@ module.exports = {
     console.log(log.red);
     write(pathToLog, log);
   },
+  fatal: (text) => {
+    const log = `[${dateFull()} - FATAL ERROR]: ${text}\n`;
+    console.log(log.red);
+    write(pathToLog, log);
+  },
   trace: (text) => {
     const log = `[${dateFull()} - TRACE]: ${text}\n`;
     console.log(log.blue);
     write(pathToLog, log);
-  }
+  },
+  debug: (text) => {
+    const log = `[${dateFull()} - DEBUG]: ${text}\n`;
+    console.log(log.green);
+    write(pathToLog, log);
+  },
 };
