@@ -40,7 +40,7 @@ module.exports = {
   },
   warn: (text) => {
     const log = `[${dateFull()} - WARN]: ${text}\n`;
-    console.log(log.magenta);
+    console.log(log.brightYellow);
     write(pathToLog, log);
   },
   err: (text, error_code) => {
