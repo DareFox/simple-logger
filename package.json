@@ -1,6 +1,6 @@
 {
   "name": "very-simple-log",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a very simple logger that can write logs to a file, paint text in a certain color depending on the log class and supports error codes for the ERROR and FATAL classes",
   "main": "index.js",
   "directories": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DareFox/simple-logger.git"
+    "url": "git+https://github.com/DareFox/very-simple-log.git"
   },
   "keywords": [
     "nodejs",
@@ -22,9 +22,9 @@
   "author": "DareFox",
   "license": "MIT License",
   "bugs": {
-    "url": "https://github.com/DareFox/simple-logger/issues"
+    "url": "https://github.com/DareFox/very-simple-log/issues"
   },
-  "homepage": "https://github.com/DareFox/simple-logger#readme",
+  "homepage": "https://github.com/DareFox/very-simple-log#readme",
   "dependencies": {
     "colors": "^1.4.0",
     "dateformat": "^3.0.3"
