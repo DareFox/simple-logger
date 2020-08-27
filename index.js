@@ -21,7 +21,6 @@ dateFormat.masks.fileDate = '"date-"dd-mm-yyyy"-time-"HH"h-"MM"m-"ss"s"'
 function dateFull() {
   const date = new Date();
   const dateFull = dateFormat(date, 'logDate');
-  console.log(dateFormat(date, 'fileDate'))
   return dateFull;
 }
 
