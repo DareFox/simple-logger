@@ -31,6 +31,6 @@ log.debug('bug check')
 log.trace(`ID is: ${variable}`)
 ```
 
-####Console Output:
+#### Console Output:
 
 ![Example of "Usage" code](https://i.imgur.com/tyr8ily.png "Example of "Usage" code")
