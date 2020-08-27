@@ -44,12 +44,29 @@ module.exports = {
     write(pathToLog, log);
   },
   err: (text, error_code) => {
-    const log = `[${dateFull()} - ERROR (CODE: "${error_code}")]: ${text}\n`;
+    if (error_code === undefined) {
+      const log = `[${dateFull()} - ERROR]: ${text}\n`;
+    } else {
+      const log = `[${dateFull()} - ERROR (CODE: "${error_code}")]: ${text}\n`;
+    }
+    console.log(log.red);
+    write(pathToLog, log);
+  },
+  error: (text, error_code) => {
+    if (error_code === undefined) {
+      const log = `[${dateFull()} - ERROR]: ${text}\n`;
+    } else {
+      const log = `[${dateFull()} - ERROR (CODE: "${error_code}")]: ${text}\n`;
+    }
     console.log(log.red);
     write(pathToLog, log);
   },
   fatal: (text) => {
-    const log = `[${dateFull()} - FATAL ERROR]: ${text}\n`;
+    if (error_code === undefined) {
+      const log = `[${dateFull()} - FATAL ERROR]: ${text}\n`;
+    } else {
+      const log = `[${dateFull()} - FATAL ERROR (CODE: "${error_code}")]: ${text}\n`;
+    }
     console.log(log.red);
     write(pathToLog, log);
   },
