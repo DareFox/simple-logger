@@ -44,28 +44,28 @@ module.exports = {
     write(pathToLog, log);
   },
   err: (text, error_code) => {
-    if (error_code === undefined) {
-      const log = `[${dateFull()} - ERROR]: ${text}\n`;
+    if (typeof error_code === 'undefined') {
+      var log = `[${dateFull()} - ERROR]: ${text}\n`;
     } else {
-      const log = `[${dateFull()} - ERROR (CODE: "${error_code}")]: ${text}\n`;
+      var log = `[${dateFull()} - ERROR (CODE: "${error_code}")]: ${text}\n`;
     }
     console.log(log.red);
     write(pathToLog, log);
   },
   error: (text, error_code) => {
-    if (error_code === undefined) {
-      const log = `[${dateFull()} - ERROR]: ${text}\n`;
+    if (typeof error_code === 'undefined') {
+      var log = `[${dateFull()} - ERROR]: ${text}\n`;
     } else {
-      const log = `[${dateFull()} - ERROR (CODE: "${error_code}")]: ${text}\n`;
+      var log = `[${dateFull()} - ERROR (CODE: "${error_code}")]: ${text}\n`;
     }
     console.log(log.red);
     write(pathToLog, log);
   },
-  fatal: (text) => {
-    if (error_code === undefined) {
-      const log = `[${dateFull()} - FATAL ERROR]: ${text}\n`;
+  fatal: (text, error_code) => {
+    if (typeof error_code === 'undefined') {
+      var log = `[${dateFull()} - FATAL ERROR]: ${text}\n`;
     } else {
-      const log = `[${dateFull()} - FATAL ERROR (CODE: "${error_code}")]: ${text}\n`;
+      var log = `[${dateFull()} - FATAL ERROR (CODE: "${error_code}")]: ${text}\n`;
     }
     console.log(log.red);
     write(pathToLog, log);
